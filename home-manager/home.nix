@@ -26,14 +26,12 @@
     ];
     # Configure your nixpkgs instance
     config = {
-      # Disable if you don't want unfree packages
       allowUnfree = true;
       # Workaround for https://github.com/nix-community/home-manager/issues/2942
       allowUnfreePredicate = (_: true);
     };
   };
 
-  # TODO: Set your username
   home = {
     username = "thzero";
     homeDirectory = "/home/thzero";
@@ -45,9 +43,14 @@
 	steam
 	neovim
 	ranger
-	rofi
+	wofi
 	alacritty	
-
+	firefox
+	discord
+	swww
+	spotify
+	lshw
+	vscodium
  ];
 
   # Enable home-manager and git

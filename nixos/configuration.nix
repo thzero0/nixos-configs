@@ -2,9 +2,10 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ inputs, lib, config, pkgs, ... }:
 
 {
+  programs.hyprland.enable = true;
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
@@ -22,8 +23,14 @@
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
+  services.pipewire = {
+	enable = true;
+	alsa.enable = true;
+	pulse.enable = true;
+	jack.enable = true;
+  };
 
-
+ 
 
   # Enable networking
   networking.networkmanager.enable = true;
@@ -93,7 +100,10 @@
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
-     git
+	git
+	python3
+     	acpi
+
   ];
 
 
