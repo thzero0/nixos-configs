@@ -6,6 +6,7 @@
 
 {
   programs.hyprland.enable = true;
+  programs.fish.enable = true;
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
@@ -103,7 +104,7 @@
 	git
 	python3
      	acpi
-
+	gcc
   ];
 
 
