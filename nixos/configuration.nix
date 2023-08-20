@@ -9,14 +9,14 @@
   programs.fish.enable = true;
   imports =
     [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
+      
+  
+    ./hardware-configuration.nix
+    ../system-modules/grubBoot.nix
     ];
 
 
-  # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-
+  
   networking.hostName = "BlackHole"; # Define your hostname.
 
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -75,6 +75,7 @@
   users.users.thzero = {
     isNormalUser = true;
     description = "thzero";
+    shell = pkgs.fish;
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [ home-manager ];
   };
