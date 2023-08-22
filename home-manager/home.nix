@@ -52,7 +52,9 @@
 	lshw
 	vscodium
 	zathura
-	feh	
+	feh
+	zip
+	unzip	
   ];
 
   # Enable home-manager and git

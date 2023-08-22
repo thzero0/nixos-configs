@@ -106,6 +106,7 @@
 	python3
      	acpi
 	gcc
+	gnumake
   ];
 
 
