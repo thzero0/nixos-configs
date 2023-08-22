@@ -1,7 +1,7 @@
 {inputs, lib, config, pkgs, ...}:
 
 {
-	networking.hostname = "BlackHole"; # Define my hostname
+	networking.hostName = "BlackHole"; # Define my hostname
 	
 	# networking.wireless.enable = true; # Enables wireless support via wpa_supplicant
 

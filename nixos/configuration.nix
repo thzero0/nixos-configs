@@ -14,7 +14,7 @@
     ./hardware-configuration.nix
     ../system-modules/grubBoot.nix
     ../system-modules/Audio
-    ../system-module/Networking
+    ../system-modules/Networking
 
     ];
 
