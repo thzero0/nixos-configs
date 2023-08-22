@@ -6,7 +6,7 @@
   imports = [
    
    # inputs.nix-colors.homeManagerModule
-	./studies/python.nix
+	../home-modules/studies/python.nix
 	../home-modules/Packages
   ];
 
