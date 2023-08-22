@@ -13,6 +13,8 @@
   
     ./hardware-configuration.nix
     ../system-modules/grubBoot.nix
+
+    ../system-modules/Audio
     ];
 
 
@@ -24,14 +26,7 @@
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-  services.pipewire = {
-	enable = true;
-	alsa.enable = true;
-	pulse.enable = true;
-	jack.enable = true;
-  };
-
- 
+   
 
   # Enable networking
   networking.networkmanager.enable = true;

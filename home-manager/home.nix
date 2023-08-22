@@ -54,7 +54,9 @@
 	zathura
 	feh
 	zip
-	unzip	
+	unzip
+	pavucontrol
+	
   ];
 
   # Enable home-manager and git
