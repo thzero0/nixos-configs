@@ -53,9 +53,6 @@
 	vscodium
 	zathura
 	feh
-	zip
-	unzip
-	pavucontrol
 	
   ];
 

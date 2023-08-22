@@ -16,6 +16,9 @@
      	acpi
 	gcc
 	gnumake
+	zip
+	unzip
+	pavucontrol
   ];
 
 

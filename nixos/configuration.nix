@@ -12,11 +12,11 @@
     [ 
 
     ./hardware-configuration.nix
-    ../system-modules/grubBoot.nix
-    ../system-modules/Audio
-    ../system-modules/Networking
-    ../system-modules/Keymap	
-    ../system-modules/Packages
+    ../nixos-modules/grubBoot.nix
+    ../nixos-modules/Audio
+    ../nixos-modules/Networking
+    ../nixos-modules/Keymap	
+    ../nixos-modules/Packages
     ];
 
 
