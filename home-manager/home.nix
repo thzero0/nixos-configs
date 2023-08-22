@@ -52,8 +52,8 @@
 	lshw
 	vscodium
 	zathura
-	pip
- ];
+	feh	
+  ];
 
   # Enable home-manager and git
   programs.home-manager.enable = true;
