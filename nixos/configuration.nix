@@ -16,10 +16,8 @@
     ../system-modules/Audio
     ../system-modules/Networking
     ../system-modules/Keymap	
-
+    ../system-modules/Packages
     ];
-
-
 
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
@@ -30,35 +28,6 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [ home-manager ];
   };
-
-
-
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
-
-  nix = {
-	registry = lib.mapAttrs (_: value: {flake = value; }) inputs;
-	nixPath = lib.mapAttrsToList (key: value: "${key}=${value.to.path}") config.nix.registry;
-	settings = {
-		experimental-features = "nix-command flakes";
-		auto-optimise-store = true;
-	};
-  };
-
-
-
-
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
-	git
-	python3
-     	acpi
-	gcc
-	gnumake
-  ];
 
 
 
