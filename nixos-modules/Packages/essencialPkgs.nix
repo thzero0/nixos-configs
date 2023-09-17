@@ -19,6 +19,9 @@
 	zip
 	unzip
 	pavucontrol
+	valgrind
+	slurp
+	jdk17
   ];
 
 

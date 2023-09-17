@@ -29,7 +29,7 @@
     packages = with pkgs; [ home-manager ];
   };
 
-
+	xdg.portal = {enable = true; extraPortals = [ pkgs.xdg-desktop-portal-gtk ]; };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

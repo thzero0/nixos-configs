@@ -48,7 +48,13 @@
 	zip
 	unzip
 	pavucontrol
-	
+	neofetch
+	gh
+	btop
+	hyfetch
+	swappy
+	grim
+	inputs.clrpkgs.packages.x86_64-linux.pokemmo-installer
   ];
 
 }
