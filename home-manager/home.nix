@@ -15,7 +15,12 @@
   programs.home-manager.enable = true;
   programs.git.enable = true;
 
-  programs.fish.enable = true;
+  programs.fish = {
+  	enable = true;
+  	interactiveShellInit = ''
+		fish_add_path --append ~/.local/bin
+		'';
+};
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";

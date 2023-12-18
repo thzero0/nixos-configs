@@ -13,6 +13,8 @@ let
       seaborn
       plotly
       pysimplegui
+      jupyter
+      notebook
 
       #autopoiesis
       (#SpeechRecognition

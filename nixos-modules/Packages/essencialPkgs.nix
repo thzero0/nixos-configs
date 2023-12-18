@@ -22,9 +22,8 @@
 	valgrind
 	slurp
 	jdk17
+  brightnessctl
+  mysql80
   ];
-
-
-
 
 }

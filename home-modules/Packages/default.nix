@@ -42,7 +42,6 @@
 	swww
 	spotify
 	lshw
-	vscodium
 	zathura
 	feh
 	zip
@@ -55,6 +54,20 @@
 	swappy
 	grim
 	inputs.clrpkgs.packages.x86_64-linux.pokemmo-installer
+	waybar
+	(pkgs.nerdfonts.override {fonts = 
+	[
+	"RobotoMono"
+	"FiraCode"
+	];})
+
+	vscode
+	dolphin
+	prismlauncher
+	nodejs_20
+	cava
+	starship
+  peaclock
   ];
 
 }
